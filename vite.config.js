@@ -8,6 +8,7 @@ export default defineConfig({
     alias: {
       "~": path.resolve(__dirname + "/src/"),
       "~~": path.resolve(__dirname + "/src/pages/"),
+      "store": path.resolve(__dirname + "/src/store/"),
     },
     extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".vue"],
   },
