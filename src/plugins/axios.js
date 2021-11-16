@@ -3,8 +3,7 @@ import router from "../router";
 import axios from "axios";
 
 axios.defaults.baseURL = "http://localhost:8000/";
-axios.defaults.headers.common["Authorization"] =
-  localStorage.getItem("token") || "";
+axios.defaults.headers.common["Authorization"] = localStorage.getItem("token");
 axios.defaults.withCredentials = true;
 
 // Add a request interceptor
@@ -34,6 +33,9 @@ axios.interceptors.response.use(
     // Do something with response error
     switch (error.response.status) {
       case 401:
+        localStorage.removeItem("token");
+        window.location.reload();
+        break;
       case 403:
       case 404:
         router.push({
