@@ -1,12 +1,12 @@
 <template>
   <transition name="auth" mode="out-in">
-    <div v-if="auth.loggedIn">
+    <div v-if="$auth.loggedIn">
       <div class="card shadow rounded-lg">
         <div class="card-header">Dashboard</div>
         <div class="card-body">
           <div class="lead">
-            Welcome, <em>{{ auth.user.name }}</em
-            >!
+            Welcome,
+            <em>{{ $auth.user.name }}</em>!
           </div>
         </div>
       </div>
@@ -29,9 +29,6 @@
 <script setup>
 import LogoVue from "../components/Logo.vue";
 import LoginVue from "../components/Forms/Login.vue";
-import { useAuthStore } from "store/useAuth";
-
-const auth = useAuthStore();
 
 document.title = "Vite with Vue and Pinia";
 </script>

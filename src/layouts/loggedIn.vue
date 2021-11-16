@@ -1,5 +1,5 @@
 <template>
-  <div v-if="auth.loggedIn">
+  <div v-if="$auth.loggedIn">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <button
@@ -47,7 +47,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                {{ auth.user.name }}
+                {{ $auth.user.name }}
               </span>
               <ul
                 class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
@@ -83,9 +83,3 @@
     <slot />
   </div>
 </template>
-
-<script setup>
-import { useAuthStore } from "../store/useAuth";
-
-const auth = useAuthStore();
-</script>
