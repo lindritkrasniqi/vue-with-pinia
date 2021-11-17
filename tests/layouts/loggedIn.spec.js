@@ -3,16 +3,12 @@ import { beforeEach, afterEach, expect } from "@jest/globals";
 import Component from "~/layouts/loggedIn";
 import { createTestingPinia } from "@pinia/testing";
 import { useAuthStore } from "~/store/useAuth";
-import { setActivePinia, createPinia } from "pinia";
+import authPlugin from "~/plugins/auth"
 
-let wrapper, auth;
+let wrapper;
 
 beforeEach(() => {
-  setActivePinia(createPinia());
-
-  wrapper = mount(Component, { global: { plugins: [createTestingPinia()] } });
-
-  auth = useAuthStore();
+  wrapper = mount(Component, { global: { plugins: [createTestingPinia(), authPlugin] } });
 });
 
 enableAutoUnmount(afterEach);
@@ -20,10 +16,11 @@ enableAutoUnmount(afterEach);
 describe("Test suite for loggedIn layout", () => {
   it("is a vue component", () => expect(wrapper.vm).toBeTruthy());
 
-  it("match snapshot when user is logged out", () =>
-    expect(wrapper.html()).toMatchSnapshot());
+  it("match snapshot when user is logged out", () => expect(wrapper.html()).toMatchSnapshot());
 
   it("match snapshot when user is logged in", () => {
+    const auth = useAuthStore();
+
     auth.$state = {
       loggedIn: true,
       user: {
