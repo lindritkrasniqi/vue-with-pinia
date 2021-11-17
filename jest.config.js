@@ -4,11 +4,11 @@ module.exports = {
   verbose: true,
   moduleFileExtensions: ["js", "json", "vue"],
   watchman: false,
-  testEnvironment: 'jsdom',
+  testEnvironment: "jsdom",
   moduleNameMapper: {
     "^~/(.*)$": "<rootDir>/src/$1",
-    "^~~/(.*)$": "<rootDir>/$1",
-    // "^vue$": "vue/dist/vue.common.js",
+    "^~~/(.*)$": "<rootDir>/src/pages/$1",
+    "^store/(.*)$": "<rootDir>/src/store/$1",
   },
   transform: {
     "^.+\\.js$": "babel-jest",
