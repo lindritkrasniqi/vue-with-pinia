@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for accounts reset page match snapshot 1`] = `
+"<div class=\\"col-12 col-md-6\\">
+  <div class=\\"card shadow rounded-lg\\">
+    <div class=\\"card-header fw-bold text-center\\">Reset your password</div>
+    <div class=\\"card-body\\">
+      <anonymous-stub></anonymous-stub>
+      <anonymous-stub></anonymous-stub>
+    </div>
+  </div>
+</div>"
+`;
