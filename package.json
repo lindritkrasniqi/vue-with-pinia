@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest --watch"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -14,7 +15,16 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@pinia/testing": "^0.0.5",
     "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/test-utils": "^2.0.0-rc.16",
+    "@vue/vue3-jest": "^27.0.0-alpha.3",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "jsdom": "^18.1.0",
+    "jsdom-global": "^3.0.2",
     "vite": "^2.6.4"
   }
 }

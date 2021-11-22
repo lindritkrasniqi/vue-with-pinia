@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register form test suite match snapshot 1`] = `
+"<form>
+  <div class=\\"mb-3 row\\"><label for=\\"name\\" class=\\"col-sm-4 col-form-label text-sm-end\\"> Name: </label>
+    <div class=\\"col-sm-8\\"><input type=\\"text\\" class=\\"form-control\\" id=\\"name\\">
+      <!--v-if-->
+    </div>
+  </div>
+  <div class=\\"mb-3 row\\"><label for=\\"email\\" class=\\"col-sm-4 col-form-label text-sm-end\\"> Email: </label>
+    <div class=\\"col-sm-8\\"><input type=\\"text\\" class=\\"form-control\\" id=\\"email\\">
+      <!--v-if-->
+    </div>
+  </div>
+  <div class=\\"mb-3 row\\"><label for=\\"inputPassword\\" class=\\"col-sm-4 col-form-label text-sm-end\\"> Password: </label>
+    <div class=\\"col-sm-8\\"><input type=\\"password\\" class=\\"form-control\\" id=\\"inputPassword\\" autocomplete=\\"false\\">
+      <!--v-if-->
+    </div>
+  </div>
+  <div class=\\"mb-3 row\\"><label for=\\"inputPassword_confirm\\" class=\\"col-sm-4 col-form-label text-sm-end\\"> Confirm password: </label>
+    <div class=\\"col-sm-8\\"><input type=\\"password\\" class=\\"form-control\\" id=\\"inputPassword_confirm\\" autocomplete=\\"false\\"></div>
+  </div>
+  <div class=\\"mb-3 row\\"><label class=\\"col-sm-4\\"></label>
+    <div class=\\"col-sm-8\\"><button type=\\"submit\\" class=\\"btn btn-outline-primary\\"><span>Sign up</span></button></div>
+  </div><a to=\\"[object Object]\\" class=\\"text-decoration-none float-end\\"> Already, have an account? </a>
+</form>"
+`;

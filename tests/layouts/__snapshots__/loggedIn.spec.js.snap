@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for loggedIn layout match snapshot when user is logged in 1`] = `"<div class=\\"container d-flex justify-content-center align-items-center\\" style=\\"height: 100vh;\\"></div>"`;
+
+exports[`Test suite for loggedIn layout match snapshot when user is logged out 1`] = `"<div class=\\"container d-flex justify-content-center align-items-center\\" style=\\"height: 100vh;\\"></div>"`;

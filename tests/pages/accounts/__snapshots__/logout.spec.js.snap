@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for accounts logout page match snapshot 1`] = `
+"<div class=\\"col text-center\\">
+  <div class=\\"spinner-border\\" role=\\"status\\"><span class=\\"visually-hidden\\">Loading...</span></div>
+  <div class=\\"lead\\">Please wait...</div>
+</div>"
+`;

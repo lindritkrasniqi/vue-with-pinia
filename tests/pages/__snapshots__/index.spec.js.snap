@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for index page match snapshot 1`] = `
+"<transition-stub>
+  <div class=\\"col-12 col-md-8\\">
+    <div class=\\"card shadow rounded-lg py-5\\">
+      <div class=\\"card-body\\">
+        <div class=\\"row align-items-center\\">
+          <anonymous-stub class=\\"col-xl-6\\"></anonymous-stub>
+          <anonymous-stub class=\\"col-xl-6\\"></anonymous-stub>
+        </div>
+      </div>
+    </div>
+  </div>
+</transition-stub>"
+`;

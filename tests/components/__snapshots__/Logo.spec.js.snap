@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component test suite match snapshot 1`] = `"<div class=\\"col text-center my-4\\"><a to=\\"[object Object]\\"><img src=\\"logo.png\\" alt=\\"Logo\\"></a></div>"`;
