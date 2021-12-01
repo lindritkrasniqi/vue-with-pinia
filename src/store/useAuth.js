@@ -36,7 +36,7 @@ export const useAuthStore = defineStore("auth", {
     },
 
     async ftechUser() {
-      this.user = (await axios.get("api/me")).data.data;
+      this.user = (await axios.get("api/me")).data;
 
       this.loggedIn = true;
     },
